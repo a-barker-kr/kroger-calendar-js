@@ -1,0 +1,38 @@
+{
+  "name": "kroger-calendar",
+  "version": "0.1.0",
+  "description": "javascript package to get the kroger calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "prepare": "npm run build",
+   "prepublishOnly": "npm test && npm run lint",
+   "preversion": "npm run lint",
+   "version": "npm run format && git add -A src",
+   "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-barker-kr/kroger-calendar-js.git"
+  },
+  "keywords": [
+    "kroger",
+    "calendar"
+  ],
+  "author": "Andrew Barker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-barker-kr/kroger-calendar-js/issues"
+  },
+  "homepage": "https://github.com/a-barker-kr/kroger-calendar-js#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  }
+}
