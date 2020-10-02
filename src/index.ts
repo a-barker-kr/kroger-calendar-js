@@ -1,7 +1,7 @@
 import * as _const from './constants';
 import './date.ext';
 
-export class krogerCalendar {
+export default class krogerCalendar {
   public fiscal_start: Date | undefined;
   public fiscal_end: Date | undefined;
   public fiscalYears: any;
