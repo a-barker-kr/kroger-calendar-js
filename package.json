@@ -1,5 +1,5 @@
 {
-  "name": "krogerCalendar",
+  "name": "kroger calendar",
   "version": "0.1.0",
   "description": "javascript package to get the kroger calendar",
   "main": "index.js",
